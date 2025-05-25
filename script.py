@@ -6,19 +6,19 @@ def load_activities():
 
 def get_user_preferences():
     # Collect user input (activity type, time, weather)
-    activity_type = ""
+    activity = ""
     time = 0
     weather = ""
 
-    while activity_type == "":
+    while activity == "":
         activity_input = input("\nWhat would you like to do this weekend? Restaurant or Activity?\n")
         # Take the first letter of user input to determine activity type, handle exceptions
         if activity_input[0].lower() == "r":
-            activity_type = "restaurant"
+            activity = "restaurant"
         elif activity_input[0].lower() == "a":
-            activity_type = "activity"
+            activity = "activity"
         else: 
-            activity_type = ""
+            activity = ""
             print("\nPlease select either restaurant or activity\n")
     
     while time == 0:
@@ -26,14 +26,24 @@ def get_user_preferences():
         try:
             time = int(time_input)
         except ValueError:
-            print("\nPlease enter a valid number for time.")
+            print("\nPlease enter a valid number for time.\n")
     
     while weather == "":
-        weather = input("\nWhat's the weather forecast?")
+        weather_input = input("\nWhat's the weather forecast (Sunny, Overcast or Raining)?\n")
+        if weather_input[0].lower() == "s":
+            weather = "sunny"
+        elif weather_input[0].lower() == "o":
+            weather = "overcast"
+        elif weather_input[0].lower() == "r":
+            weather = "raining"
+        else: 
+            weather = ""
+            print("\nPlease select either sunny, overcast or raining\n")
     
-    return activity_type, time, weather
+    print(activity, time, weather)
+    return activity, time, weather
 
-def filter_activities(activities, preferences, weather):
+def filter_activities(activity, time, weather):
     # Filter activities based on user input
     pass
 
@@ -45,7 +55,7 @@ def main():
     print("\nWelcome to your weekend planner\n")
     activities = load_activities()
     preferences = get_user_preferences()
-    filtered = filter_activities(activities, preferences)
+    filtered = filter_activities(activity, time, weather)
     display_recommendations(filtered)
 
 if __name__ == "__main__":
