@@ -61,7 +61,8 @@ def display_recommendations(filtered_activities):
     for option in filtered_activities:
         print(f"Activity: {option["name"]}")
         print(f"Type: {option["type"]}")
-        print(f"Time: {option["time"]}\n")
+        print(f"Time: {option["time"]}")
+        print(f"Weather: {option["weather"]}\n")
 
 def main():
     print("\nWelcome to your weekend planner\n")
