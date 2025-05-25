@@ -1,5 +1,23 @@
-activities = [
-    {"name": "Go for a hike", "type": "outdoor", "time": 180, "weather": ["sunny", "cloudy"]},
-    {"name": "Visit a museum", "type": "indoor", "time": 120, "weather": ["sunny", "rainy"]},
-    ...
+activity_list = [
+    {"name": "Lennox Pizza at the Park", "type": "restaurant", "time": 120, "weather": ["sunny", "overcast"]},
+    {"name": "Ballina Bakery", "type": "activity", "time": 120, "weather": ["sunny", "overcast", "raining"]},
+    {"name": "Seven Mile Beach", "type": "activity", "time": 120, "weather": ["sunny", "overcast"]},
+    {"name": "Lennox Head Beach", "type": "activity", "time": 120, "weather": ["sunny", "overcast"]},
+    {"name": "Freewave Sushi + Park", "type": "restaurant", "time": 120, "weather": ["sunny", "overcast"]},
+    {"name": "Bike Ride", "type": "activity", "time": 120, "weather": ["sunny", "overcast"]},
+    {"name": "Chido Cantina", "type": "restaurant", "time": 120, "weather": ["sunny", "overcast"]},
+    {"name": "Hey Lady Diner", "type": "restaurant", "time": 120, "weather": ["sunny", "overcast", "raining"]},
+    {"name": "Jekyl and Hyde Lennox", "type": "restaurant", "time": 120, "weather": ["sunny", "overcast", "raining"]},
+    {"name": "Eltham Hotel", "type": "restaurant", "time": 120, "weather": ["sunny", "overcast", "raining"]},
+    {"name": "Ballina Pools", "type": "activity", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "GyG in the Park", "type": "restaurant", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "The Farm", "type": "activity", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "Macadamia Castle", "type": "activity", "time": 300, "weather": ["sunny", "overcast", "raining"]},
+    {"name": "Summerland Farm", "type": "activity", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "Three Sisters Walking Track", "type": "activity", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "Killen Falls", "type": "activity", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "Bangalow Sushi + Park", "type": "restaurant", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "Brunswick Heads Pub Lunch", "type": "restaurant", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "North Byron Hotel", "type": "restaurant", "time": 300, "weather": ["sunny", "overcast"]},
+    {"name": "Tropical Fruit World", "type": "restaurant", "time": 300, "weather": ["sunny", "overcast"]}
 ]
