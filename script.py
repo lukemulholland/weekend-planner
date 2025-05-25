@@ -45,18 +45,23 @@ def get_user_preferences():
 
 def filter_activities(activities, preferences):
     # Filter activities based on user input
+    activity, time, weather = preferences
     filtered_activities = []
     for option in activities:
-        if option["type"] == preferences[0]:
-            if option["time"] <= preferences[1]:
-                if preferences[2] in activity["weather"]:
+        if option["type"] == activity:
+            if option["time"] <= time:
+                if weather in option["weather"]:
                     filtered_activities.append(option)
-    return filter_activities
+    return filtered_activities
 
 
 def display_recommendations(filtered_activities):
     # Display matching activities
-    pass
+    print("\nDisplaying your weekend recommendations:\n")
+    for option in filtered_activities:
+        print(f"Activity: {option["name"]}")
+        print(f"Type: {option["type"]}")
+        print(f"Time: {option["time"]}\n")
 
 def main():
     print("\nWelcome to your weekend planner\n")
